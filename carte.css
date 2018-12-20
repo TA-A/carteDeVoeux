@@ -1,0 +1,257 @@
+body{
+    background-color: #262449;
+}
+/******************************************************************************************************
+       *******************************************************************************************************
+       ***********************************Couleur du texte en forme de sapin**********************************/
+       
+       #etoilesapin { fill:#EA92E8;
+            animation-name: etoileColor;
+            animation-duration: 4s;
+            animation-iteration-count: infinite;
+        }
+        @keyframes etoileColor {
+            0%   {fill:#EA92E8;}
+            12% {fill:#1DDD38;}
+            24% {fill:#7600FF;}
+            50% {fill:#E27E47;}
+            62% {fill:#E020CE;}
+            74% {fill:#FFF800;}
+            100%  {fill:#1AE8E8;}
+        }
+
+        #we { fill:#1DDD38;
+            animation-name: weColor;
+            animation-duration: 4s;
+            animation-iteration-count: infinite;
+        }
+        @keyframes weColor {
+            0%   {fill:#1DDD38;}
+            12% {fill:#FFF800;}
+            24% {fill:#1AE8E8;}
+            50% {fill:#E020CE;}
+            62% {fill:#E27E47;}
+            74% {fill:#EA92E8;}
+            100%  {fill:#7600FF;}
+        }
+
+        #wish { fill:#FFF800;
+            animation-name: wishColor;
+            animation-duration: 4s;
+            animation-iteration-count: infinite;
+        }
+        @keyframes wishColor {
+            0%   {fill:#FFF800;}
+            12%  {fill:#E27E47;}
+            24% {fill:#7600FF;}
+            50% {fill:#1AE8E8;}
+            62% {fill:#E020CE;}
+            74% {fill:#1DDD38;}
+            100%  {fill:#EA92E8;}
+        }
+
+        #youa { fill:#E27E47;
+            animation-name: youaColor;
+            animation-duration: 4s;
+            animation-iteration-count: infinite;
+        }
+        @keyframes youaColor {
+            0%   {fill:#E27E47;}
+            12%  {fill:#EA92E8;}
+            24% {fill:#1DDD38;}
+            50% {fill:#E020CE;}
+            62% {fill:#1AE8E8;}
+            74% {fill:#7600FF;}
+            100%  {fill:#FFF800;}
+        }
+
+        #merry { fill:#EA92E8;
+            animation-name: merryColor;
+            animation-duration: 4s;
+            animation-iteration-count: infinite;
+        }
+        @keyframes merryColor {
+            0%   {fill:#EA92E8;}
+            12%  {fill:#FFF800;}
+            24% {fill:#7600FF;}
+            50% {fill:#1DDD38;}
+            62% {fill:#E020CE;}
+            74% {fill:#1AE8E8;}
+            100%  {fill:#E27E47;}
+        }
+
+        #christmas { fill:#7600FF;
+            animation-name: christmasColor;
+            animation-duration: 4s;
+            animation-iteration-count: infinite;
+        }
+        @keyframes christmasColor {
+            0%   {fill:#7600FF;}
+            12%  {fill:#1AE8E8;}
+            24%  {fill:#E27E47;}
+            50% {fill:#FFF800;}
+            62% {fill:#EA92E8;}
+            74% {fill:#1DDD38;}
+            100%  {fill:#E020CE;}
+        }
+
+/******************************************************************************************************
+*******************************************************************************************************
+*****************************************Rotation des cercles******************************************/
+
+#bleu_2_, #fuschia, #violet_2_{
+        animation-name: rotationDroite;
+        animation-duration: 4s;
+        animation-iteration-count: infinite;
+        animation-timing-function: linear;
+        transform-origin: center;
+        transform-box:fill-box;
+    }
+    @keyframes rotationDroite {
+        from { transform: rotate(0deg); }
+        to   { transform: rotate(360deg); }
+    }
+
+#jaune_2_, #orange, #vert{
+        animation-name: rotationGauche;
+        animation-duration: 4s;
+        animation-iteration-count: infinite;
+        animation-timing-function: linear;
+        transform-origin: center;
+        transform-box:fill-box;
+    }
+    @keyframes rotationGauche {
+        from { transform: rotate(0deg); }
+        to   { transform: rotate(-360deg); }
+    }
+
+/******************************************************************************************************
+*******************************************************************************************************
+*****************************************Rotation des nuages******************************************/
+
+#nuages{
+    animation-name: rotation;
+    animation-duration: 120s;
+    animation-iteration-count: infinite;
+    transform-origin: center;
+    transform-box:fill-box;
+}
+@keyframes rotation {
+    from { transform: rotate(0deg); }
+    to   { transform: rotate(360deg); }
+}
+
+/******************************************************************************************************
+*******************************************************************************************************
+*************************************Rotation de l'étoile filante**************************************/
+
+#etoile_x5F_filante, #etoile_x5F_filante_1_, #etoile_x5F_filante_2_ {
+            opacity: 0;
+            animation-name: etoileMoves;
+            animation-duration: 3s;
+            animation-iteration-count: 1;
+            transform-origin: 50% 50%;
+            animation-delay: 10s;
+        }
+        @keyframes etoileMoves {
+            0%  { transform: translate(-200px, 0); }
+            0% { opacity: 0.5; }
+            30% { opacity: 1; }
+            70% { opacity: 0.5; }
+            100%  { transform: translate(512px, 300px); }
+            100% { opacity: 0.5; }
+        }
+
+/******************************************************************************************************
+*******************************************************************************************************
+*****************************************Fumées de la cheminé******************************************/
+
+#chem1,#chem2,#chem3,#chem4  {
+            animation-name: chemBouge;
+            animation-duration: 4s;
+            animation-iteration-count: infinite;
+            transform-origin: 50% 50%;
+            animation-direction: alternate-reverse;
+        }
+        @keyframes chemBouge {
+            0%   { transform: translate(0, 0); }
+            100% { transform: translate(0,-20px); }
+        }
+
+/******************************************************************************************************
+*******************************************************************************************************
+*****************************************Père_Noël et lutins*******************************************/
+
+#Pere-Noel{
+    animation-name: personnages;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    transform-origin: center;
+    transform-box:fill-box;
+}
+@keyframes personnages {
+    0%   { transform: rotate(0deg); }
+    32%  { transform: rotate(-15deg); }
+    72% { transform: rotate(15deg); }
+    100%   { transform: rotate(0deg); }
+}
+
+#lutin1{
+    animation-name: lutin;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    transform-origin: center;
+    transform-box:fill-box;
+}
+@keyframes lutin {
+    0%   { transform: rotate(0deg); }
+    32%  { transform: rotate(1deg); }
+    72% { transform: rotate(-1deg); }
+    100%   { transform: rotate(0deg); }
+}
+
+#lutin2 {
+    animation-name: lutin2;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    transform-origin: center;
+    transform-box:fill-box;
+}
+@keyframes lutin2 {
+    0%   { transform: rotate(0deg); }
+    32%  { transform: rotate(-1deg); }
+    72% { transform: rotate(1deg); }
+    100%   { transform: rotate(0deg); }
+}
+
+audio{
+    position: fixed;
+    left: 5%;
+    bottom: 5%;
+}
+
+/******************************************************************************************************
+*******************************************************************************************************
+**********************************************Formulaire***********************************************/
+
+h1{
+    font-family: Helvetica, Arial, Helvetica, sans-serif;
+    font-weight: 500;
+}
+
+#color{
+    padding-top: 1%;
+    padding-right: 1%;
+    padding-bottom: 1%;
+    padding-left: 1%;
+    background-color: white;
+    width: 35%;
+    border-radius: 2%;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    margin-bottom: 5%
+}

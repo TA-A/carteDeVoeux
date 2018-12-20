@@ -1,0 +1,34 @@
+<mjml>
+
+<mj-head>
+  <mj-attributes>
+    <mj-text align="center" color="#555">Joyeux Noel</mj-text> />
+  </mj-attributes>
+</mj-head>
+
+<mj-body background-color="black">
+
+  <mj-text font-size="50px" color="red" > Joyeux Noel</mj-text>
+
+<mj-image height=""src="carte.png" />
+<mj-carousel-image src="carte.png" />
+
+  <mj-column width="100%">
+    <mj-text font-family="Times New Roman" font-size="25px" color="grey" >
+      Je vous souhaite de passer de très belles fêtes de fin d'année en compagnie de tous ceux que vous aimez. Paix, joie, festin et gourmandise : que tous les ingrédients d'un Noël réussi soient au rendez-vous. Nous vous embrassons et vous disons à l'année
+      prochaine !
+    </mj-text>
+  </mj-column>
+
+  <mj-section background-color="black">
+    <mj-column background-color="black">
+      <mj-carousel>
+        <mj-carousel-image src="images.jpg" />
+        <mj-carousel-image src="noel.jpg" />
+        <mj-carousel-image src="renne.jpg" />
+      </mj-carousel>
+    </mj-column>
+  </mj-section>
+
+</mj-body>
+</mjml>

@@ -1,0 +1,203 @@
+.diamond {
+    /*Animation-name relie la cible de l'animation aux actions d'animations. L'élément cible est la classe
+    diamond diamondMoves relie la classe aux actions d'animations.*/
+    animation-name: diamondMoves; 
+    /*Précise la durée de l'animation on peut utiliser les secondes et millisecondes
+    (6s et 6000ms).*/
+    animation-duration: 6s; 
+    /*Précise combien de fois l'animation se répète valeurs possible => nombre décimal comme 0,5 ou 1,
+    le keyword infinite pour que l'animation se répète indéfiniment.*/
+    animation-iteration-count: 1;
+    /*Rend l'animation plus naturelle et fluide valeurs possibles => les keywords ease, ease-in, ease-out,
+    ease-in-out, linear, step-start, step-end // une function tel que frames(5).*/
+    animation-timing-function: linear;
+    /*Un compte à rebours avant le départ de l'animation autre valeurs => 6s et 6000ms.*/
+    animation-delay: 4s;
+}
+
+/*La fonction @keyframes indique ce qui doit arrivé à des moments précis au cours de l'animation.*/
+@keyframes diamondMoves { 
+    /*from et to sont les équivalent de 0% et 100%.*/
+    from { transform: translateX(0); }
+    to   { transform: translateX(400px); }
+}
+
+@keyframes diamondMoves { 
+    /*Entre le début et la fin de l'animation on peut ajouté autant de @keyframes que l'on veut.*/
+    0%   { transform: translateX(0); }
+    50%  { transform: translateX(100px); }
+    100% { transform: translateX(400px); }
+}
+
+
+.mouse { fill: #E5E4E3; }
+    .tulip { fill: #CC2954; }
+    .diamondOr {
+        animation-name: diamondOrigin;
+        animation-duration: 4s;
+        animation-iteration-count: infinite;
+    }
+    @keyframes diamondOrigin {
+        from { transform: rotate(0deg); }
+        to   { transform: rotate(360deg); }
+    }
+
+
+    .mouse { fill: #E5E4E3; }
+    .tulip { fill: #CC2954; }
+    .diamondOrCh {
+        animation-name: diamondOriginChanged;
+        animation-duration: 1s;
+        animation-iteration-count: infinite;
+        transform-origin: 50% 50%;
+    }
+    @keyframes diamondOriginChanged {
+        from { transform: rotate(0deg); }
+        to   { transform: rotate(360deg); }
+    }
+
+
+    .mouse { fill: #E5E4E3; }
+        .tulip { fill: #CC2954; }
+        .diamondTu {
+            animation-name: diamondTurns;
+            animation-duration: 4s;
+            animation-iteration-count: infinite;
+            transform-origin: 50% 50%;
+        }
+        @keyframes diamondTurns {
+            0%   { transform: rotate(0deg); }
+            50%  { transform: rotate(-90deg); }
+            100% { transform: rotate(0deg); }
+        }
+
+
+        .mouse { fill: #E5E4E3; }
+        .tulip { fill: #CC2954; }
+        .diamondMo {
+            animation-name: diamondMoves;
+            animation-duration: 8s;
+            animation-iteration-count: infinite;
+            transform-origin: 50% 50%;
+        }
+        @keyframes diamondMoves {
+            0%   { transform: translate(0, 0); }
+            20%  { transform: translate(0, -200px); }
+            30%  { transform: translate(0, 0); }
+            40%  { transform: translate(0, 200px); }
+            50%  { transform: translate(0, 0); }
+            60%  { transform: translate(-200px, 0); }
+            70%  { transform: translate(0, 0); }
+            80%  { transform: translate(200px, 0); }
+            100% { transform: translate(0, 0); }
+        }
+
+
+        .mouse { fill: #E5E4E3; }
+        .tulip { fill: #CC2954; }
+        .diamondSc {
+            animation-name: diamondScale;
+            animation-duration: 4s;
+            animation-iteration-count: infinite;
+            transform-origin: 50% 50%;
+        }
+        @keyframes diamondScale {
+            0%   { transform: scale(0.5); }
+            50%  { transform: scale(1.5); }
+            100% { transform: scale(0.5); }
+        }
+
+
+        .mouse { fill: #E5E4E3; }
+        .tulip { fill: #CC2954; }
+        .diamondSk {
+            animation-name: diamondSkew;
+            animation-duration: 4s;
+            animation-iteration-count: infinite;
+            transform-origin: 50% 50%;
+        }
+        @keyframes diamondSkew {
+            0%   { transform: skew(0); }
+            25%  { transform: skew(-35deg); }
+            50%  { transform: skew(0); }
+            75%  { transform: skew(35deg); }
+            100% { transform: skew(0); }
+        }
+
+
+        .mouse { fill: #E5E4E3; }
+        .tulip { fill: #CC2954; }
+        .diamondCo {
+            animation-name: diamondColor;
+            animation-duration: 4s;
+            animation-iteration-count: 1;
+        }
+        @keyframes diamondColor {
+            0%   { fill: #CC2954; }
+            100% { fill: #F2F230; }
+        }
+
+
+        .mouse { fill: #E5E4E3; }
+        .tulip { fill: #CC2954; }
+        .diamondFi {
+            animation-name: diamondFillMode;
+            animation-duration: 4s;
+            animation-iteration-count: 1;
+            animation-fill-mode: forwards;
+        }
+        @keyframes diamondFillMode {
+            0%   { fill: #CC2954; }
+            100% { fill: #F2F230; }
+        }
+
+
+        .mouse { fill: #E5E4E3; }
+        .pathTulip {
+            fill: #E5E4E3;
+            stroke: #CC2954;
+            stroke-width: 10px;
+            stroke-linejoin: round;
+            stroke-linecap: round;
+            stroke-dasharray: 1000;
+            stroke-dashoffset: 1000;
+        }
+        .diamondSt {
+            animation-name: diamondStroke;
+            animation-duration: 4s;
+            animation-iteration-count: infinite;
+        }
+        @keyframes diamondStroke {
+            0%   { stroke-dashoffset: 1000; }
+            50%   { stroke-dashoffset: 0; }
+            100% { stroke-dashoffset: 1000; }
+        }
+
+
+        .mouse { fill: #E5E4E3; }
+        .tulip { fill: #CC2954; }
+        .diamondOp {
+            animation-name: diamondOpacity;
+            animation-duration: 4s;
+            animation-iteration-count: infinite;
+        }
+        @keyframes diamondOpacity {
+            0%   { opacity: 1; }
+            50%  { opacity: 0.1; }
+            100% { opacity: 1; }
+        }
+
+
+        .mouse { fill: #E5E4E3; }
+        .tulip { fill: #CC2954; }
+        .diamondMoBa {
+            animation-name: diamondMovesBack;
+            animation-duration: 4s;
+            animation-iteration-count: infinite;
+            transform-origin: 50% 50%;
+            animation-direction: alternate-reverse;
+        }
+        @keyframes diamondMovesBack {
+            0%   { transform: translate(0, 0); }
+            100% { transform: translate(200px, 0); }
+        }
